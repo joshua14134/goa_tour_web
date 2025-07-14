@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Your Goa Trip</title>
+  <link rel="icon" href="./assets/files/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    nav {
+      background-color: #009688;
+      padding: 10px 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    .navbar {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .booking {
+      max-width: 800px;
+      margin: 3rem auto;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .booking h1 {
+      text-align: center;
+      color: #00796b;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .booking p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    fieldset {
+      border: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="number"],
+    select,
+    textarea {
+      padding: 10px;
+      font-size: 1rem;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    input[type="radio"] {
+      margin-right: 8px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .submit-btn {
+      margin-top: 20px;
+      padding: 12px;
+      font-size: 1rem;
+      font-weight: bold;
+      background-color: #009688;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #00796b;
+    }
+
+    .footer {
+      background-color: #263238;
+      color: white;
+      padding: 2rem 5%;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footlinks h4 {
+      margin-bottom: 1rem;
+    }
+
+    .footlinks ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footlinks ul li a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .footlinks ul li a:hover {
+      color: white;
+    }
+
+    .social a {
+      color: #009688;
+      font-size: 20px;
+      margin-right: 12px;
+      background: white;
+      padding: 8px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+    }
+
+    .social a:hover {
+      transform: scale(1.1);
+    }
+
+    .end {
+      text-align: center;
+      padding-top: 1rem;
+      font-size: 14px;
+      color: #bbb;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <img src="./assets/files/logo.png" class="logo" alt="Logo" title="Explore Goa">
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="package.html">Packages</a></li>
+      <li><a href="locations.html">Locations</a></li>
+      <li><a href="info.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="booking">
+    <h1>Online Booking</h1>
+    <p>Fill the form below to book your dream trip to Goa!</p>
+
+    <form>
+      <fieldset>
+        <label>First Name* <input type="text" name="firstname" required></label>
+        <label>Last Name* <input type="text" name="lastname" required></label>
+        <label>Email* <input type="email" name="email" required></label>
+        <label>Phone* <input type="tel" name="phone" required></label>
+        <label>Check-in Date* <input type="date" name="checkin" required></label>
+        <label>Check-out Date* <input type="date" name="checkout" required></label>
+      </fieldset>
+
+      <fieldset>
+        <label>Accommodation Type*
+          <select name="accommodation" required>
+            <option value="">-- Select --</option>
+            <option>Hotel</option>
+            <option>Resort</option>
+            <option>Villa</option>
+            <option>Guesthouse</option>
+          </select>
+        </label>
+
+        <label>Number of Rooms* <input type="number" name="rooms" min="1" required></label>
+
+        <label>Room Type*</label>
+        <label><input type="radio" name="roomtype" value="Single" required> Single</label>
+        <label><input type="radio" name="roomtype" value="Double"> Double</label>
+        <label><input type="radio" name="roomtype" value="Triple"> Triple</label>
+        <label><input type="radio" name="roomtype" value="Quad"> Quad</label>
+
+        <label>Additional Requests
+          <textarea name="message" rows="4" placeholder="Any preferences or questions?"></textarea>
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Book Now" onclick="alert('Booking Successful!')" class="submit-btn">
+    </form>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footlinks">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="./booking.html">Register</a></li>
+          <li><a href="./info.html">About Us</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footlinks">
+        <h4>Connect</h4>
+        <div class="social">
+          <a href="https://www.facebook.com/login/" target="_blank" title="Facebook"><i class='bx bxl-facebook'></i></a>
+          <a href="https://www.instagram.com/accounts/login/" target="_blank" title="Instagram"><i class='bx bxl-instagram'></i></a>
+          <a href="https://twitter.com/login" target="_blank" title="Twitter"><i class='bx bxl-twitter'></i></a>
+          <a href="https://www.linkedin.com/login" target="_blank" title="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+          <a href="https://github.com/login" target="_blank" title="GitHub"><i class='bx bxl-github'></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="end">
+      <p>&copy; 2025 Explore Goa. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

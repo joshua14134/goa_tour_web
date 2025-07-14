@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="icon" href="./assets/files/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f4f7f8;
+      color: #333;
+    }
+
+    nav {
+      background-color: #009688;
+      padding: 1rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav img.logo {
+      height: 50px;
+    }
+
+    nav .navbar {
+      display: flex;
+      list-style: none;
+      gap: 1rem;
+    }
+
+    nav .navbar li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 12px;
+    }
+
+    nav .navbar li a:hover {
+      text-decoration: underline;
+    }
+
+    .contact {
+      padding: 80px 10% 40px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      max-width: 900px;
+      margin: 2rem auto;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      color: #00796b;
+      margin-bottom: 10px;
+    }
+
+    .contact h1 span {
+      color: #004d40;
+    }
+
+    .contact p {
+      text-align: center;
+      font-size: 1rem;
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 12px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 100%;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+    }
+
+    .submit-btn {
+      background-color: #009688;
+      color: white;
+      border: none;
+      padding: 14px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #00796b;
+    }
+
+    .footer {
+      background: #263238;
+      color: white;
+      padding: 2rem 5%;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .footlinks h4 {
+      margin-bottom: 1rem;
+    }
+
+    .footlinks ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .footlinks ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footlinks ul li a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .footlinks ul li a:hover {
+      color: white;
+    }
+
+    .social a {
+      color: #009688;
+      background: white;
+      padding: 8px;
+      margin-right: 8px;
+      border-radius: 50%;
+      display: inline-block;
+      font-size: 1.2rem;
+      transition: 0.3s;
+    }
+
+    .social a:hover {
+      transform: scale(1.2);
+    }
+
+    .end {
+      text-align: center;
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+  </style>
+</head>
+
+<body class="contactbody">
+  <nav>
+    <img src="./assets/files/logo.png" class="logo" alt="Logo" title="Explore Goa" />
+    <ul class="navbar">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./index.html#package">Packages</a></li>
+      <li><a href="./index.html#locations">Locations</a></li>
+      <li><a href="./info.html">About Us</a></li>
+      <li><a href="./contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section class="contact">
+    <h1>Contact <span>Us</span></h1>
+    <p>We value your feedback, inquiries, and suggestions. Let us know how we can help you.</p>
+
+    <div class="contact-form">
+      <form action="">
+        <input type="text" name="myname" placeholder="Enter Name" required />
+        <input type="email" name="email" placeholder="Enter E-mail" required />
+        <input type="text" name="phone" placeholder="Enter Phone number" required />
+        <input type="text" name="subject" placeholder="What brings you here?" required />
+        <textarea name="message" cols="30" rows="5" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Submit" onclick="alert('Thank you! \nYour response was submitted')" class="submit-btn" />
+      </form>
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="footer-content">
+      <div class="footlinks">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="./booking.html">Register</a></li>
+          <li><a href="./info.html">About Us</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footlinks">
+        <h4>Connect</h4>
+        <div class="social">
+          <a href="https://www.facebook.com/profile.php?id=100007787415175" target="_blank"><i class='bx bxl-facebook'></i></a>
+          <a href="https://www.instagram.com/iamit010/" target="_blank"><i class='bx bxl-instagram'></i></a>
+          <a href="https://twitter.com/sarcasmit_" target="_blank"><i class='bx bxl-twitter'></i></a>
+          <a href="https://www.linkedin.com/in/amit-kumar-singh-475b36212/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+          <a href="https://github.com/iamit010" target="_blank"><i class='bx bxl-github'></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="end">
+      <p>© 2025 Explore Goa. All rights reserved.<br>Website developed by: Amit Kumar Singh</p>
+    </div>
+  </section>
+</body>
+
+</html>

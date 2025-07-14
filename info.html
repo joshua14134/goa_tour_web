@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Explore Goa</title>
+  <link rel="icon" href="./assets/files/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #f4f7f9;
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #009688;
+      padding: 1rem 5%;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav .logo {
+      height: 50px;
+    }
+
+    .navbar {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .about {
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .about h1 {
+      font-size: 2.5rem;
+      color: #004d40;
+      text-align: center;
+    }
+
+    .about span {
+      color: #009688;
+    }
+
+    .about img {
+      display: block;
+      margin: 1.5rem auto;
+      max-width: 200px;
+      border-radius: 50%;
+    }
+
+    .about p {
+      text-align: justify;
+      line-height: 1.7;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .connectbtn {
+      display: inline-block;
+      background-color: #009688;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 12px 24px;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+
+    .connectbtn:hover {
+      background-color: #00796b;
+    }
+
+    .social-icons {
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin: 0 8px;
+      font-size: 24px;
+      color: #009688;
+      background: white;
+      border-radius: 50%;
+      padding: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+      background-color: #e0f2f1;
+    }
+
+    .footer {
+      background-color: #263238;
+      color: white;
+      padding: 2rem 5%;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footlinks h4 {
+      margin-bottom: 10px;
+    }
+
+    .footlinks ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .footlinks ul li {
+      margin-bottom: 8px;
+    }
+
+    .footlinks ul li a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .footlinks ul li a:hover {
+      color: white;
+    }
+
+    .social a {
+      color: #009688;
+      font-size: 20px;
+      margin-right: 10px;
+    }
+
+    .end {
+      text-align: center;
+      font-size: 14px;
+      color: #bbb;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <img src="./assets/files/logo.png" class="logo" alt="Explore Goa Logo" title="Explore Goa" />
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#package">Packages</a></li>
+      <li><a href="index.html#locations">Locations</a></li>
+      <li><a href="info.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  
+  <section class="about">
+    <h1>About <span>Us</span></h1>
+    <img src="./assets/files/me.jpg" alt="Developer Photo" />
+    <p>
+      <strong>Explore Goa</strong> is a student project website crafted by <strong>Joshua Greg Colaco</strong> using HTML, CSS, and JavaScript as part of a frontend development course.
+      <br><br>
+      Our mission is to provide a vibrant and modern tourism platform highlighting the beauty and culture of Goa. From iconic beaches and Portuguese forts to spice plantations and Goan cuisine, this site is tailored for travel enthusiasts, students, and tourism promoters.
+      <br><br>
+      We prioritize <strong>usability, responsiveness, and experience</strong> to help users plan their dream escape to Goa with ease.
+      <br><br>
+      Thank you for visiting. Let’s connect and explore more together!
+    </p>
+
+    <div style="text-align:center;">
+      <a href="https://www.linkedin.com/in/joshua-colaco-b8927325a" class="connectbtn" target="_blank">Connect with Me</a>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=100007787415175" target="_blank"><i class='bx bxl-facebook'></i></a>
+      <a href="https://www.instagram.com/iamit010/" target="_blank"><i class='bx bxl-instagram'></i></a>
+      <a href="https://twitter.com/sarcasmit_" target="_blank"><i class='bx bxl-twitter'></i></a>
+      <a href="https://www.linkedin.com/in/joshua-colaco-b8927325a" target="_blank"><i class='bx bxl-linkedin'></i></a>
+      <a href="https://github.com/iamit010" target="_blank"><i class='bx bxl-github'></i></a>
+    </div>
+  </section>
+
+ 
+  <section class="footer">
+    <div class="footer-content">
+      <div class="footlinks">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="booking.html">Register</a></li>
+          <li><a href="info.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footlinks">
+        <h4>Connect</h4>
+        <div class="social">
+          <a href="https://www.facebook.com/profile.php?id=100007787415175" target="_blank"><i class='bx bxl-facebook'></i></a>
+          <a href="https://www.instagram.com/iamit010/" target="_blank"><i class='bx bxl-instagram'></i></a>
+          <a href="https://twitter.com/sarcasmit_" target="_blank"><i class='bx bxl-twitter'></i></a>
+          <a href="https://www.linkedin.com/in/joshua-colaco-b8927325a" target="_blank"><i class='bx bxl-linkedin'></i></a>
+          <a href="https://github.com/iamit010" target="_blank"><i class='bx bxl-github'></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="end">
+      <p>&copy; 2025 Explore Goa. All rights reserved.<br>Website developed by: <strong>Joshua Greg Colaco</strong></p>
+    </div>
+  </section>
+</body>
+
+</html>

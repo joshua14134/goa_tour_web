@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.banner {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 4%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+}
+
+.logo {
+  height: 50px;
+}
+
+.navbar {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar a {
+  color: #222;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #009688;
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 150px;
+}
+
+.title h1 {
+  font-size: 4rem;
+}
+
+.wrapper {
+  background: rgba(54, 0, 90, 0.9);
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.wrapper input[type="text"],
+.wrapper input[type="date"],
+.wrapper input[type="range"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: white;
+  color: #00796b;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #00796b;
+  color: white;
+}
+
+/* Gallery */
+
+.gallery {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery figure {
+  width: 300px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.gallery figcaption {
+  margin-top: 8px;
+  font-weight: 500;
+  color: #5e2a2a;
+}
+
+/* Chart Section */
+.chart-section {
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 750px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 150, 136, 0.2);
+}
+
+.chart-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}

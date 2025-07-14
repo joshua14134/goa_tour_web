@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Goa - Tourism Website</title>
+  <link rel="icon" href="./assets/files/logo.png">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <div class="banner">
+    <video src="./assets/files/bgvid.mp4" autoplay muted loop></video>
+    <div class="content" id="home">
+      <nav class="navbar-fixed">
+        <img src="./assets/files/logo.png" class="logo" alt="Logo" title="Explore Goa">
+        <ul class="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="package.html">Packages</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="info.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="title">
+        <h1>Explore Goa</h1>
+        <p>Sun, Sand, and Serenity Await – Discover Goa’s Top Attractions and Packages</p>
+        <div class="wrapper">
+          <form action="#">
+            <div class="form-title">Plan Your Trip</div>
+            <label for="destination">Destination:</label>
+            <input type="text" placeholder="e.g., Calangute Beach" />
+
+            <label for="date">Travel Date:</label>
+            <input type="date" />
+
+            <label for="budget">Max Budget: ₹<span id="result">2500</span></label>
+            <input id="mySlider" type="range" min="0" max="10000" value="2500" />
+            <script>
+              mySlider.oninput = function () {
+                result.innerText = this.value;
+              };
+            </script>
+          </form>
+        </div>
+        <a href="./booking.html" class="button">
+          <span class="material-symbols-outlined">how_to_reg</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="gallery" id="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery-grid">
+      <figure><img src="./assets/files/goa1.jpg" alt="Goa Beach"><figcaption>Goa Beach</figcaption></figure>
+      <figure><img src="./assets/files/goa2.jpg" alt="Church in Goa"><figcaption>Church in Goa</figcaption></figure>
+      <figure><img src="./assets/files/goa3.jpg" alt="Fort Aguada"><figcaption>Fort Aguada</figcaption></figure>
+      <figure><img src="./assets/files/goa4.jpg" alt="Goa Nightlife"><figcaption>Goa Nightlife</figcaption></figure>
+      <figure><img src="./assets/files/goa5.jpg" alt="Sunset"><figcaption>Sunset at Beach</figcaption></figure>
+      <figure><img src="./assets/files/goa6.jpg" alt="Spice Plantation"><figcaption>Spice Plantation</figcaption></figure>
+      <figure><img src="./assets/files/goa7.jpg" alt="Mandovi Cruise"><figcaption>Cruise on Mandovi River</figcaption></figure>
+      <figure><img src="./assets/files/goa8.jpg" alt="Goan Food"><figcaption>Goan Cuisine</figcaption></figure>
+    </div>
+  </section>
+
+
+  <section class="chart-section" id="stats">
+    <h2>Goa Tourist Footfall Statistics</h2>
+    <canvas id="goaChart" height="200"></canvas>
+    <script>
+      const ctx = document.getElementById('goaChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['2019', '2020', '2021', '2022', '2023'],
+          datasets: [{
+            label: 'Visitors (in millions)',
+            data: [8.2, 2.5, 4.7, 6.3, 7.9],
+            backgroundColor: ['#00796b', '#009688', '#26a69a', '#4db6ac', '#80cbc4'],
+            borderRadius: 6
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            title: {
+              display: true,
+              text: 'Year-wise Tourist Visits to Goa',
+              font: { size: 18 },
+              color: '#004d40'
+            },
+            legend: {
+              labels: {
+                color: '#00695c',
+                font: { weight: 'bold' }
+              }
+            },
+            tooltip: {
+              backgroundColor: '#009688'
+            }
+          },
+          scales: {
+            x: {
+              ticks: { color: '#00695c' }
+            },
+            y: {
+              beginAtZero: true,
+              ticks: { color: '#00695c' }
+            }
+          }
+        }
+      });
+    </script>
+  </section>
+</body>
+</html>
